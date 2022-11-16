@@ -1,0 +1,628 @@
+
+@media (max-width : 1200px)
+    .hero
+        &__title
+            font-size: 26px
+            line-height: 26px 
+        &__abs-pic
+            max-width: 170px
+    .bottom
+        &__logo
+            margin-right 80px
+    .feedbacks
+        & .slick-next
+            right: -70%;
+            position: relative;
+            z-index: 100;
+            bottom: -65px
+        & .slick-prev
+            left: 28%;
+            position: relative;
+            z-index: 100;
+            bottom: -380px
+    .cabinet
+        &-right
+            margin-left 210px
+        &-profile
+            &__wrapper
+                flex-wrap: wrap
+            &__title
+                text-align center
+            &__left
+                width: 100%
+            &__right
+                width 100%
+            &__item
+                width: 100%
+                &-wrapper
+                    justify-content: left
+                    flex-wrap: wrap
+                    gap 0
+                    .cabinet-profile__item
+                        width: 100%
+                    .cabinet-profile__item.wide
+                        width: 100%
+                    .cabinet-profile__item.half
+                        width: 100%
+
+
+// /* Medium Devices, Desktops */
+// @media (max-width : 992px)
+// /* Small Devices, Tablets */
+@media (max-width : 768px)
+    .admin-page
+        .header
+            display block
+            &__nav
+                display block
+                width: 100vw
+                height: 85vh
+                background: #007B87
+                position fixed
+                z-index 500
+                top: 0
+                left 0
+                bottom 0
+                right 0
+                transition: .5s
+                transform: translateY(-100%)
+                &__burger
+                    position relative
+                    z-index 600
+                .cabinet__menu
+                    padding-top: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 0 0 25px 25px
+                    background: #007B87
+
+    .cabinet
+        padding: 120px 80px 0 50px;
+        &-right
+            margin-left 0
+        &__title
+            text-align center
+            margin-bottom 30px
+        &__menu
+            display none
+            position: static
+        &__list
+            display flex
+            flex-direction: column
+            align-items: center
+            &-link
+                color: #fff
+        &__button
+            background: #fff
+            color: #192122
+            margin 30px auto 60px
+        &__container-top
+            flex-direction: column
+            align-items: center
+        &__specs-list-item
+            width: 100%
+        &__content-item
+            flex-direction: column
+            align-items: center
+            &-number
+                text-align center
+                margin-bottom 10px
+            &-desc
+                text-align center
+            &-desc-2
+                text-align center
+            &:not(:last-child)
+                margin-bottom 40px
+        &-options
+            &__desc
+                font-size 14px
+                line-height 18px
+                font-weight 700
+                max-width: 315px
+                margin: 0 auto 30px
+            &__item
+                width: 335px
+        &-services
+            &__title
+                text-align center
+        &-event
+            &__title
+                text-align center
+        &-mailing
+            &__title
+                text-align center
+        &-feedback
+            &__title
+                text-align center
+            &__form-container
+                flex-wrap: wrap
+                gap: 0
+        &-sub
+            &__title
+                text-align center
+            &__container
+                flex-wrap: wrap
+                justify-content: center
+            &__right
+                h3
+                    text-align center
+        &-reports
+            &__wrapper
+                justify-content: center
+                h3
+                    text-align center
+            &__title
+                text-align center
+            &__option
+                margin-top 20px
+            &__items-item
+                gap: 10px
+
+                
+
+
+    .step-1
+        .loan
+            display none
+        .form
+            padding-top 350px
+        .fields
+            padding: 90px 30px 60px 30px;
+        .form-calc
+            &__bottom
+                flex-direction: column
+                align-items: center
+            &__bottom-items
+                margin: 0 0 20px 0
+            &__return
+                flex-direction: row
+                &-grey
+                    margin-bottom 0
+                    margin-right 10px
+            &__dropdown
+                margin-top 15px
+    .step-2
+        .loan
+            display none
+        .passport
+            padding-top 350px
+            &__container
+                flex-wrap: wrap
+            &__item
+                width: 100%
+
+
+
+    .header
+        &__logout
+            display block
+        &__burger
+            display block
+            z-index 600
+        &__nav
+            display block
+            width: 100vw
+            height: 35vh
+            background: #007B87
+            position fixed
+            z-index 500
+            top: 0
+            left 0
+            bottom 0
+            right 0
+            transition: .5s
+            transform: translateY(-100%)
+            border-radius: 0 0 25px 25px
+            &-logo
+                max-width: 135px
+                display block
+                margin: 35px auto 35px
+        &__sign-in
+            display none
+        &__logo
+            position: relative
+            top: 5px
+        &__nav-list
+            flex-direction: column
+            align-items: center
+        &__nav-list-item:not(:last-of-type)
+            margin-right 0
+            margin-bottom 20px
+        
+
+    .hero
+        background: radial-gradient(71.55% 71.55% at 50% 83.46%, #21FFF6 0%, #007C87 100%);
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        &__pic
+            display none
+        &__pic-2
+            display block
+            margin-bottom -180px
+        &__title-wrapper
+            margin-right 0
+            margin-bottom 30px
+        .calc
+            margin-bottom 10px
+        &__desc
+            font-weight 700
+            max-width: 274px
+        &__title
+            margin-bottom 10px
+        &__abs-pic
+            display none
+        
+
+    .steps
+        &__wrapper
+            flex-direction: column
+            &:before
+                width: 23.8%;
+                height: 1px;
+                left: 38.2%;
+                top: 21%;
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            &:after
+                width: 23.8%;
+                height: 1px;
+                right: 38.2%;
+                top: 56%;
+                transform: rotate(90deg);
+        &__item
+            margin-bottom 15px
+        
+    .cards
+        &__title
+            font-size: 26px;
+            line-height: 26px;
+            margin-bottom 10px
+        &__desc
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom 30px
+    .bottom
+        background: radial-gradient(66.47% 144.78% at 50% -31.24%, #21fff6 0%, #007c87 90%);
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        &__pic
+            max-width: 192px
+            margin-bottom -80px
+        &__logo
+            max-width: 135px
+            margin-right 0
+            margin-bottom 30px
+        .calc
+            margin-bottom 10px
+
+    .footer
+        padding: 50px 0
+        &__logo
+            display none
+        &__wrapper
+            justify-content: center
+            &-2
+                flex-direction: column-reverse
+                margin-bottom 40px
+            &-3
+                flex-direction: column
+            &-4
+                flex-direction: column
+                align-items: baseline
+        &__anchors-anchor
+            color: #fff
+            &:not(:last-child)
+                margin-right 0
+                margin-bottom 25px
+        &__links
+            flex-direction: column
+            align-items: center
+        &__links-link:not(:last-child)
+            margin-right 0
+            margin-bottom 20px
+        &__anchors
+            flex-direction: column
+            align-items: center
+            margin-bottom 40px
+        &__right-first, &__right-second, &__left
+            max-width: 768px
+            
+
+
+        
+// /* Small Devices, Tablets */
+// @media (max-width : 568px)
+// /* Small Devices, Tablets */
+@media (max-width : 480px)
+    .cabinet
+        padding: 120px 0 0 0 
+        &__content
+            padding: 30px 10px 120px 10px;
+        &-options
+            padding: 35px 20px 50px 10px;
+        &-profile
+            &__icon-edit
+                display none
+            &__left
+                padding: 30px 20px 40px 20px
+            &__right
+                padding: 30px 20px 40px 20px
+    .admin-popup
+        &__button
+            width: 200px
+
+    .popup
+        padding: 50px 30px
+        &__title
+            font-size 26px
+            line-height 26px
+            margin: 20px 0
+    .step-1
+        .wrapper
+            padding: 0
+        .form-calc
+            &__wrapper-bottom
+                flex-wrap: wrap
+                justify-content: center
+                align-items: center
+            &__top
+                padding: 20px
+        .fields
+            padding: 90px 30px 30px 30px
+            &__container
+                flex-wrap: wrap
+            &__button
+                width: 100%
+                margin-top 30px
+            &__checkbox
+                justify-content: left
+                font-size 13px
+    .step-2
+        .passport
+            .wrapper
+                padding: 0
+            &__title
+                font-size 20px
+                line-height 24px
+                margin-bottom 20px
+            &__wrapper
+                padding: 30px
+    .step-3
+        .wrapper
+            background: radial-gradient(61.55% 41.55% at 50% 43.46%, #21fff6 0%, #007c87 90%);
+        &__pic
+            top: 10px
+        &__scores-block
+            width: 101px
+            height: 101px
+        &__scores-inner
+            width: 91px
+            height: 91px
+            border: 15px solid #00aab5;
+        &__scores-inner2
+            top: 52%
+            svg
+                width: 90px
+                height: 90px
+        &__scores-text
+            p
+                font-size 18px
+                line-height 16px
+            &:after
+                font-size 12px
+                line-height 16px
+                right: -13px
+                top: -3px
+        &__title
+            max-width: 200px
+            font-size 26px
+            line-height 26px
+            margin: 0 auto 10px
+        &__desc
+            font-size 14px
+            line-height 18px
+            font-weight 700
+    .step-4
+        .wrapper
+            padding: 0
+        &__form
+            padding: 30px
+        &__bottom
+            margin: 45px auto 0
+            padding: 0 30px
+        &__title
+            font-size 26px
+            line-height 26px
+            margin-bottom 10px
+            padding: 0 30px
+        &__desc
+            font-size 14px
+            line-height 18px
+            font-weight 700
+            margin-bottom 30px
+            padding: 0 30px
+            max-width: 300px
+    .step-5
+        .wrapper
+            padding: 0
+        &__form
+            padding: 30px
+        &__title
+            font-size 26px
+            line-height 26px
+            margin-bottom 10px
+            max-width: 245px
+        &__desc
+            font-size 14px
+            line-height 18px
+            font-weight 700
+            margin-bottom 30px
+            padding: 0 30px
+            max-width: 300px
+    .step-6
+        .passport
+            .wrapper
+                padding: 0
+            &__wrapper
+                padding: 30px
+            &__title
+                font-size 26px
+                line-height 26px
+                margin-bottom 20px
+
+
+    .steps
+        padding: 50px 0
+    .cards
+        padding: 50px 0 228px 0;
+    .why
+        background: radial-gradient(68.36% 27.6% at 50% 28.96%, #21FFF6 0%, #007C87 100%);
+        padding: 50px 0
+        &__title
+            font-size: 26px;
+            line-height: 26px;
+            margin-bottom 10px
+        &__desc
+            font-size 14px
+            line-height 20px
+            margin-bottom 30px
+        &__wrapper
+            gap: 10px
+    .request
+        padding-top 50px
+        &__title
+            font-size: 26px;
+            line-height: 26px;
+            max-width: 296px
+            margin: 0 auto 30px
+        &__desc-top
+            font-size 14px
+            line-height 20px
+            margin-bottom 10px
+        &__desc-bottom
+            font-size 14px
+            line-height 20px
+            margin-bottom 30px
+        &__subtitle
+            font-size 18px
+            line-height 24px
+        &__list-item
+            p
+                font-size 14px
+                line-height 22px
+        
+    .clients
+        background: radial-gradient(93.8% 93.8% at 50% 122.76%, #21FFF6 0%, #007C87 100%) 
+        &__items
+            flex-direction: column
+            gap: 24px
+        &__number
+            font-size 44px
+            line-height 44px
+        &__desc
+            font-size 14px
+            line-height 14px
+    .video
+        padding: 50px 0
+        &__block
+            border-radius: 30px
+    .feedbacks
+        background: radial-gradient(53.72% 53.72% at 50% 56.96%, #21FFF6 0%, #007C87 100%);
+        padding: 50px 0
+        .wrapper
+            padding: 0 15px
+        &__title
+            font-size 26px
+            line-height 26px
+            margin-bottom 30px
+        .slick-dots
+            bottom: -30px
+        & .slick-next
+            bottom: -27px
+            right: -80%
+        & .slick-prev
+            left: 16%
+            bottom -340px
+    .faq
+        padding: 50px 0 0 0
+        &__title
+            font-size 26px
+            line-height 26px
+            margin-bottom 30px
+        .wrapper
+            padding: 0
+        dt
+            div
+                font-size 18px
+                line-height 24px
+        dd
+            font-size 14px
+            line-height 20px
+
+    .options
+        .wrapper
+            padding: 0 20px
+        &__title
+            font-size 26px
+            line-height 26px
+            max-width: 245px
+            margin-bottom 17px
+        &__desc
+            font-weight 700
+            margin-bottom 30px
+            max-width: 369px
+        &__wrapper
+            margin: 0 auto
+        &__item
+            width: 335px
+            margin: 5px
+
+    .subscribe
+        .wrapper
+            padding: 0
+        &__form
+            padding: 30px
+        &__title
+            margin-bottom 10px
+            font-size 26px
+            line-height 26px
+        &__desc
+            font-weight 700
+            margin-bottom 30px
+    .enter
+        .wrapper
+            padding: 0
+        &__form
+            padding: 30px
+        &__title
+            font-size 26px
+            line-height 26px
+            max-width: 200px
+            margin: 0 auto 30px
+    .feedback
+        .wrapper
+            padding: 0
+        &__form
+            padding: 30px
+        &__title
+            font-size 26px
+            line-height 26px
+            max-width: 210px
+            margin: 0 auto 30px
+
+@media (max-width : 320px)
+    .calc
+        width: 310px
+    .step-1
+        .form-calc__bottom-items
+            width: 284px
+    .cabinet
+        &-options
+            &__item
+                width: 284px
+    .feedbacks
+        &__item
+            width: 280px

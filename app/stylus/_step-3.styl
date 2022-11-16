@@ -1,0 +1,114 @@
+.step-3
+    display none
+    padding-top 85px
+    background: #007C87
+    position relative
+    z-index: 1
+    padding-bottom 20px
+    .wrapper
+        position relative
+        z-index 10
+    &:before
+        content: ""
+        position absolute
+        top: 0
+        width: 100%
+        height: 451px
+        background: radial-gradient(36.56% 82.04% at 50% 100%, #21FFF6 0%, #007C87 100%);
+        display block
+        z-index 1
+    &:after
+        content: ""
+        position absolute
+        top: 201px
+        width: 100%
+        height: 250px
+        background: linear-gradient(180deg, rgba(0, 123, 135, 0.0001) 0%, #007C88 56.94%);
+        display block
+        z-index 1
+    &__pic
+        max-width: 243px
+        margin: 0 auto -50px
+        position relative
+    &__title
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom 20px
+    &__desc
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 771px
+        margin: auto
+    &__scores
+        position absolute
+        top: 45%
+        left: 50%
+        transform: translateX(-50%)
+        z-index 10
+        &-block
+            background: #fff
+            border-radius: 50%
+            width: 162px
+            height: 162px
+            position relative
+        &-inner
+            position absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 153px
+            height: 153px
+            border-radius: 50%
+            border: 28px solid #00AAB5
+            z-index 1
+        &-inner2
+            position absolute
+            top: 51%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index 2
+            svg
+                path
+                    stroke-width: 18px;
+                    stroke: #ffffff;
+                    stroke-lineCap: round;
+                    stroke-dasharray: 500
+                    stroke-dashoffset: -500
+                    -webkit-transition: all 4.2s linear;
+                    transition: all 4.2s linear;
+            &.active
+                svg
+                    path
+                        stroke-dashoffset: 0
+        &-text
+            position absolute
+            top: 52%
+            left: 49%
+            transform: translate(-50%, -50%)
+            display flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            p
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 26px;
+                text-align: center;
+                color: #192122;
+                margin-bottom 5px
+            &:after
+                content: "%"
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                text-align: center;
+                color: rgba(25, 33, 34, .5);
+                position absolute
+                right: -17px
+                top 2px

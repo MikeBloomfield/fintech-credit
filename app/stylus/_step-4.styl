@@ -1,0 +1,132 @@
+.step-4
+    display none
+    padding-top 125px
+    background: #007C87
+    position relative
+    z-index: 1
+    padding-bottom 20px
+    .wrapper
+        position relative
+        z-index 10
+    &:before
+        content: ""
+        position absolute
+        top: 0
+        width: 100%
+        height: 451px
+        background: radial-gradient(36.56% 82.04% at 50% 100%, #21FFF6 0%, #007C87 100%);
+        display block
+        z-index 1
+    &:after
+        content: ""
+        position absolute
+        top: 201px
+        width: 100%
+        height: 250px
+        background: linear-gradient(180deg, rgba(0, 123, 135, 0.0001) 0%, #007C88 56.94%);
+        display block
+        z-index 1
+    label
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: rgba(25, 33, 34, .5);
+    input
+        background: #FFFFFF;
+        border: 1px solid #D1D6D8;
+        border-radius: 25px;
+        padding: 18px 25px
+        color: #182021
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        width: 100%
+        margin-top 10px
+        &::placeholder
+            opacity .5
+    &__bottom
+        display flex
+        justify-content: space-between
+        max-width: 400px
+        margin: 40px auto 0
+    &__back
+        padding-left 30px
+        position relative
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #FFFFFF;
+        &:before
+            content ""
+            position absolute
+            width: 20px
+            height: 20px
+            background: url(../img/main/back-light.svg)
+            display block
+            left: 0
+            top: -2px
+        &:hover
+            color: rgba(255, 255, 255, .5)
+    &__nocard
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #FFFFFF;
+        padding-left 30px
+        position relative
+        &:before
+            content ""
+            position absolute
+            width: 23px
+            height: 23px
+            background: url(../img/main/nocard.svg)
+            display block
+            left: 0
+            top: -3px
+        &:hover
+            color: rgba(255, 255, 255, .5)
+    &__title
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom 20px
+    &__desc
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 670px
+        margin: 0 auto 40px
+    &__form
+        padding: 40px
+        border-radius: 45px
+        background: #fff
+        max-width: 480px
+        margin: auto
+        &-item
+            &-left
+                width: 60%
+            &-right
+                width: 30%
+        &-bottom
+            display flex
+            justify-content: space-between
+            margin: 20px auto 30px
+        &-button
+            color: #fff
+            background: #00AAB5;
+            border-radius: 35px;
+            display block
+            max-width: 100%
+            text-align center
+            padding: 25px 0
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            transition: .2s
+            &:hover
+                background: hsl(184, 100%, 25%);
+                color: #fff 

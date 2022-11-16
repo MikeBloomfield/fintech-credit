@@ -1,0 +1,304 @@
+.cabinet-profile
+    &__social
+        &-logo
+            width: 50px
+            height: 50px
+            background: #fff
+            border-radius: 50%
+            display flex
+            justify-content: center
+            align-items: center
+        &-item
+            padding: 8px 30px 8px 35px
+            border: 1px solid #d1d6d8
+            border-radius: 35px
+            display flex
+            justify-content: space-between
+            align-items: center
+            &:not(:last-child)
+                margin-bottom 20px
+        &-icon
+            transition: $default-transition
+            &:hover
+                opacity .5
+        &-title
+            font-size: 20px;
+            line-height: 30px;
+            color: #192122;
+        &-wrapper
+            display flex
+            justify-content: space-between
+            align-items: center
+            gap: 15px
+    &__title
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #192122;
+        margin-bottom 40px
+    &__subtitle
+        font-size 20px
+        line-height 25px
+        color: #192122;
+        font-weight 600
+        margin-bottom 0
+    &__wrapper
+        display flex
+        justify-content: space-between
+        gap: 50px
+    &__left
+        width: 50%
+        padding: 30px 50px 40px 50px;
+        border-radius: 35px
+        border: 1px solid #D1D6D8;
+        input
+            display none
+        .cabinet-profile__button
+            color: #fff
+            background: #00AAB5;
+            border-radius: 35px;
+            display block
+            max-width: 100%
+            text-align center
+            padding: 25px 0
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            transition: .2s
+            max-width: 400px
+            margin: 30px auto 0
+            display none
+            &:hover
+                background: hsl(184, 100%, 25%);
+                color: #fff
+        &.wide
+            margin-top 40px
+            width: 100% 
+            .cabinet-profile__button
+                width: 100%!important
+        &.no-border
+            border: none
+        &-wrapper
+            display flex
+            justify-content: space-between
+            margin-bottom 30px
+            height: 30px
+    &__left.active
+        .cabinet-profile__icon
+            img
+                display none
+            .cabinet-profile__icon-edit
+                display none
+        .cabinet-profile__icon-text
+            display block
+        .cabinet-profile__item
+            input
+                display block
+            &-block
+                display none
+        .cabinet-profile__button
+            display block
+        .passport__radio
+            display block
+            input
+                display none
+            .passport__radio-container
+                justify-content: left
+                gap 20px
+    &__right
+        width: 50%
+        padding: 30px 50px 40px 50px;
+        border-radius: 35px
+        border: 1px solid #D1D6D8;
+        .cabinet-profile__subtitle
+            margin-bottom 40px
+        .cabinet-profile__button
+            color: #fff
+            background: #00AAB5;
+            border-radius: 35px;
+            display block
+            max-width: 100%
+            text-align center
+            padding: 25px 0
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            transition: .2s
+            max-width: 400px
+            margin: 30px auto 0
+            &:hover
+                background: hsl(184, 100%, 25%);
+                color: #fff 
+    &__icon
+        cursor: pointer
+        display flex
+        align-items: center
+        transition: $default-transition
+        &:hover
+            opacity .5
+        &-svg
+            max-width: 30px
+        &-text
+            display none
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            color: #192122;
+        &-edit
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            color: #192122;
+    label
+        display inline-block
+        font-size 16px
+        line-height 20px
+        margin-bottom 15px
+    input
+        margin-top 0
+        font-size: 18px;
+        line-height: 22px;
+    &__item
+        margin-bottom 22px
+        &-block
+            font-size: 18px;
+            line-height: 22px;
+            color: #192122;
+            word-break: break-word;
+            padding-bottom: 17px;
+    &__item-wrapper
+        display flex
+        justify-content: space-between
+        gap 20px
+        .cabinet-profile__item
+            width: 33%
+        .cabinet-profile__item.wide
+            width: 66%
+        .cabinet-profile__item.half
+            width: 50%
+    .passport
+        &__radio
+            display none
+            &-text
+                font-size: 18px;
+                line-height: 22px;
+                color: #192122;
+                word-break: break-word;
+                padding-bottom: 17px;
+            &__wrapper
+                display none
+            &-fake
+                background: #FFFFFF;
+                border: 1px solid #D1D6D8;
+                border-radius: 16px;
+                width: 32px
+                height: 32px
+                position relative;
+                margin-right: 10px
+                &:before
+                    transition: .3s
+                    content ""
+                    width: 32px
+                    height 32px
+                    top: -1px
+                    left: -1px
+                    position: absolute
+                    border: 9px solid #00AAB5;
+                    border-radius: 16px
+                    opacity 0
+
+            &-title
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 15px;
+            &-label
+                display flex
+                align-items: center
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 15px;
+                color: #182021;
+            &-container
+                display flex
+                justify-content: space-between
+            &-item
+                max-width: 112px
+                input
+                    display none
+                    width: 32px
+                    height: 32px
+                    background: #FFFFFF;
+                    border: 1px solid #D1D6D8;
+                    border-radius: 16px;
+                    margin 0
+                    &:checked + .passport__radio-fake:before
+                        opacity 1
+
+.textarea
+    div
+        margin-bottom 10px
+    &-input
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: rgba(24, 32, 33, .5);
+        mix-blend-mode: normal;
+        height: 140px
+        width: 100%
+        resize: none
+        background: #FFFFFF;
+        border: 1px solid #D1D6D8;
+        border-radius: 25px;
+        padding: 17px 25px
+        &:placeholder
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 15px;
+            color: rgba(24, 32, 33, .5);
+            mix-blend-mode: normal;
+        &:focus
+            border: 1px solid #00AAB5;
+
+
+
+
+.admin-popup
+    background: #fff
+    border-radius: 35px
+    max-width: 620px
+    padding: 50px 60px 60px
+    display none
+    &__title
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 40px;
+        text-align: center;
+        color: #192122;
+        margin-bottom: 30px;
+    &__desc
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(25,33,34,0.5);
+        text-align: center;
+    &__button
+        color: #fff
+        background: #00AAB5;
+        border-radius: 35px;
+        display block
+        max-width: 100%
+        text-align center
+        padding: 25px 0
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        transition: .2s
+        max-width: 400px
+        margin: 30px auto 0
+        width: 300px
+        &:hover
+            background: hsl(184, 100%, 25%);
+            color: #fff
+
+    

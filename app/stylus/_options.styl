@@ -1,0 +1,119 @@
+.options
+    padding-top 125px
+    background: #007C87
+    position relative
+    z-index: 1
+    .wrapper
+        position relative
+        z-index 10
+    &:before
+        content: ""
+        position absolute
+        top: 0
+        width: 100%
+        height: 451px
+        background: radial-gradient(36.56% 82.04% at 50% 100%, #21FFF6 0%, #007C87 100%);
+        display block
+        z-index 1
+    &:after
+        content: ""
+        position absolute
+        top: 201px
+        width: 100%
+        height: 250px
+        background: linear-gradient(180deg, rgba(0, 123, 135, 0.0001) 0%, #007C88 56.94%);
+        display block
+        z-index 1
+    &__title
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #FF723C;
+        border-radius: 25px;
+        max-width: 493px
+        margin: 0 auto 10px
+        padding: 7px 0 10px
+    &__desc
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 474px
+        margin: 0 auto 40px
+    &__wrapper
+        max-width: 1240px
+        margin: 40px auto 0
+        position relative
+        z-index: 5
+        display flex
+        flex-wrap: wrap
+        justify-content: center
+    &__item
+        padding: 20px 40px 30px 40px
+        background: #FFFFFF;
+        border-radius: 30px;
+        width: 270px
+        display flex
+        flex-direction: column
+        align-items: center
+        margin: 20px
+        &-pic
+            max-width: 101px
+            margin: 0 auto 15px
+        &-title
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+            color: #192122;
+            margin 0 0 5px 0
+        &-bid
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            color: rgba(25, 33, 34, .5);
+            &-zero
+                color: #00AAB5;
+                background: #C3F1F4;
+                border-radius: 17px;
+                padding: 3px 14px
+        &-button
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #00AAB5;
+            border-radius: 35px;
+            display block
+            width: 100%
+            margin-top 20px
+            padding: 12px 0 14px
+            transition: .2s
+            &:hover
+                color: #fff
+                background: hsl(184, 100%, 25%);
+    &__more
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #192122;
+        display block
+        background: #FFFFFF;
+        border-radius: 35px;
+        max-width: 163px
+        margin: 40px auto 0
+        padding: 13px 0
+        border: 2px solid transparent
+        &:hover
+            color: #fff
+            border: 2px solid #fff
+            background: transparent
+
+
+    

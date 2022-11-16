@@ -1,0 +1,100 @@
+.cabinet
+    &-options
+        padding-top 125px
+        background: #007C87
+        background: #fff
+        border-radius: 45px;
+        padding: 60px 60px 80px 60px
+        .wrapper
+            position relative
+            z-index 10
+        &.active
+            display block
+        &__title
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #FF723C;
+            border-radius: 25px;
+            max-width: 265px
+            margin: 0 auto 15px
+            padding: 7px 0 10px
+        &__desc
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #192122;
+            margin: 0 auto 50px
+        &__wrapper
+            max-width: 1240px
+            margin: 40px auto 0
+            position relative
+            z-index: 5
+            display flex
+            flex-wrap: wrap
+            justify-content: center
+            gap: 35px
+        &__item
+            border: 1px solid #D1D6D8;
+            padding: 20px 40px 30px 40px
+            background: #FFFFFF;
+            border-radius: 30px;
+            width: 270px
+            display flex
+            flex-direction: column
+            align-items: center
+            &-pic
+                max-width: 101px
+                margin: 0 auto 15px
+            &-title
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                text-align: center;
+                color: #192122;
+                margin 0 0 5px 0
+            &-bid
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: rgba(25, 33, 34, .5);
+                &-zero
+                    color: #00AAB5;
+                    background: #C3F1F4;
+                    border-radius: 17px;
+                    padding: 3px 14px
+            &-button
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: #FFFFFF;
+                background: #00AAB5;
+                border-radius: 35px;
+                display block
+                width: 100%
+                margin-top 20px
+                padding: 12px 0 14px
+                transition: .2s
+                &:hover
+                    color: #fff
+                    background: hsl(184, 100%, 25%);
+        &__more
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            color: #FFFFFF;
+            display block
+            background: #00AAB5;
+            border-radius: 35px;
+            padding: 12px 0 14px
+            width: 163px
+            margin: 40px auto 0
+            &:hover
+                color: #fff
+                background: hsl(184, 100%, 25%);

@@ -1,0 +1,827 @@
+//main styles
+.main-wrapper
+	padding 0 0 0 0
+	min-width $min-width
+	width 100%
+	position relative
+	overflow hidden
+	display flex
+	flex-direction column
+	justify-content flex-start	
+
+.wrapper
+	min-width $min-width
+	max-width $max-width
+	padding 0 40px 0 40px
+	margin 0 auto
+	position relative
+
+/* titles */
+p
+	font($base-font-size, $base-line-height, $text-color, $custom-font-family, 400)
+
+h1
+	font($font-size-h1, $line-height-h1, $title-color, $custom-font-family, 700)
+
+h2
+	font($font-size-h2, $line-height-h2, $title-color, $custom-font-family, 700)
+
+h3
+	font($font-size-h3, $line-height-h3, $title-color, $custom-font-family, 700)
+h4
+	font($font-size-h3, $line-height-h3, $title-color, $custom-font-family, 700)
+
+/* styles */
+.main
+	min-width $min-width
+	width 100%
+	order 2
+	flex-grow 1
+	
+.hero
+	max-width: 100%
+	background: radial-gradient(63.31% 63.31% at 16.92% 76.53%, #21FFF6 0%, #007C87 100%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	border-bottom-left-radius: 50px
+	border-bottom-right-radius: 50px
+	padding-top 105px
+	&__wrapper
+		display flex
+		justify-content: space-between
+		position relative
+		align-items: flex-end
+	&__pic
+		max-width: 444px
+	&__pic-2
+		max-width: 242px
+		display none
+	&__title
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 66px;
+		text-align: center;
+		letter-spacing: -1px;
+		color: #FFFFFF;
+		margin-bottom 20px
+		max-width: 394px
+	&__desc
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		color: #FFFFFF;
+		max-width: 264px
+	&__title-wrapper
+		display flex
+		flex-direction: column
+		align-items: center
+		margin-right 70px
+		margin-bottom 288px
+	&__abs-pic
+		position absolute
+		top: 58%
+		left: 46%
+
+.steps
+	padding: 120px 0
+	&__item
+		display flex
+		flex-direction: column
+		align-items: center
+		position relative
+		z-index 2
+	&__pic
+		max-width: 50px
+	&__wrapper
+		display flex
+		justify-content: space-around
+		align-items: center
+		margin: auto
+		max-width: 1040px
+		position relative
+		&:before
+			content: ""
+			background: url(../img/main/line-1.svg)
+			display block
+			position absolute
+			width: 29.8%
+			height 1px
+			left: 19%
+			top: 20%
+		&:after
+			content: ""
+			display block
+			position absolute
+			width: 310px
+			background: url(../img/main/line-2.svg)
+			width: 29.8%
+			height 1px
+			right: 20%
+			top: 20%
+	&__title
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+		text-align: center;
+		color: #192122;
+		max-width: 320px
+		margin-top 15px
+
+.cards
+	padding: 120px 0 308px 0
+	border-radius: 50px
+	background: #F2F2F2;
+	margin-bottom: -188px
+	.wrapper
+		padding: 0 15px
+	&__title
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 64px;
+		text-align: center;
+		color: #192122;
+		margin-bottom 20px
+	&__desc
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: rgba(25, 33, 34, .5);
+		mix-blend-mode: normal;
+		margin-bottom 60px
+	&__wrapper
+		display flex
+		justify-content: center
+		align-items: center
+		max-width: 750px
+		margin: auto
+		flex-wrap: wrap
+		gap: 15px
+	&__item
+		max-width: 100px
+
+.why
+	padding: 120px 0
+	background: radial-gradient(119.15% 119.15% at 48.93% 134.6%, #21FFF6 0%, #007C87 100%);
+	border-radius: 50px;
+	&__title
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 64px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom 20px
+	&__desc
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0 auto 60px
+		max-width: 608px
+	&__wrapper
+		max-width: 1040px
+		margin: auto
+		display flex
+		justify-content: center
+		gap: 40px
+		flex-wrap: wrap
+	&__item
+		display flex
+		flex-direction: column
+		align-items: center
+		background-color: #fff
+		border-radius: 45px
+		width: 320px
+		padding-top 40px
+		padding-bottom 50px
+		&-pic
+			max-width: 45px
+			margin-bottom 15px
+		&-title
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 24px;
+			text-align: center;
+			color: #192122;
+			margin-bottom 10px
+			max-width: 255px
+		&-desc
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			text-align: center;
+			color: #192122;
+			max-width: 235px;
+
+.request
+	padding-top 120px
+	border-radius: 50px
+	background: #fff
+	position relative
+	z-index 2
+	&__title
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 64px;
+		text-align: center;
+		color: #192122;
+		margin: 0 auto 60px
+		max-width: 447px
+	&__desc-top
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 34px;
+		color: #192122;
+		max-width: 880px
+		margin: 0 auto 10px
+	&__desc-bottom
+		max-width: 880px
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 34px;
+		color: #192122;
+		margin: 0 auto 31px
+	&__container
+		max-width: 880px
+		margin: 0 auto 60px
+	&__subtitle
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+		color: #192122;
+		margin-bottom 24px
+	&__list
+		&-item
+			position relative
+			padding-left 38px
+			&:not(:last-child)
+				margin-bottom 15px
+			&:before
+				content: "—"
+				position absolute
+				left: 0
+				top: 0
+				color: #8C8F90;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 34px;
+			p
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 34px;
+				color: #192122;
+	&__pic
+		max-width: 548px
+		margin: auto
+
+.clients
+	margin-top -120px
+	padding: 200px 0 80px 0
+	border-radius: 50px
+	background: radial-gradient(189.61% 189.61% at 47.45% 194.6%, #21FFF6 0%, #007C87 100%);
+	&__items
+		display flex
+		justify-content: space-between
+		max-width: 960px
+		margin: auto
+	&__number
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 64px;
+		text-align: center;
+		letter-spacing: -2px;
+		color: #FFFFFF;
+		margin-bottom 20px
+	&__desc
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 16px;
+		text-align: center;
+		color: #FFFFFF;
+
+.video
+	padding: 120px 0
+	&__wrapper
+		max-width: 1040px
+		margin: auto
+		padding: 0 15px
+		position relative
+	&__block
+		background-image: url("../img/main/video.png");
+		background-size: contain;
+		background-repeat: no-repeat
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		padding-top: 56.25%;
+		border-radius: 50px;
+		&.activeVideo 
+			.video__startBlock
+				opacity 0
+				pointer-events: none
+			.video__iframe
+				opacity 1
+				pointer-events: all
+	&__startBlock
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		&-btn
+			position: absolute;
+			top: 49.5%;
+			left: 50%;
+			width: 8.75%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			cursor: pointer;
+			-webkit-transition: all 0.3s ease-in;
+			transition: all 0.3s ease-in;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			transition: $default-transition
+			&:hover
+				opacity .8
+	&__iframe
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		opacity 0
+		pointer-events: none
+
+.feedbacks
+	padding: 120px 0
+	background: radial-gradient(119.15% 119.15% at 48.93% 134.6%, #21FFF6 0%, #007C87 100%);
+	border-radius: 50px;
+	&__title
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 64px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom 60px
+	&__container
+		max-width: 1040px
+		margin: auto
+	&__item
+		width: 320px
+		background: #fff
+		border-radius: 45px
+		padding: 40px 0 50px 0
+		margin: 0 20px
+		&-pic
+			max-width: 65px
+			margin: 0 auto 20px
+		&-feedback
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: -0.454545px;
+			color: #192122;
+			max-width: 255px
+			margin: 0 auto 20px
+		&-name
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 14px;
+			text-align: center;
+			color: rgba(25, 33, 34, .5);
+			mix-blend-mode: normal;
+
+	.slick-next
+		right: -10%
+		&:before
+			content: ""
+			background: url(../img/main/slider-arrow.svg)
+			left: 0
+			width: 24px
+			height: 24px
+			display block
+	.slick-prev
+		left: -10%
+		&:before
+			content: ""
+			background: url(../img/main/slider-arrow.svg)
+			left: 0
+			width: 24px
+			height: 24px
+			display block
+			transform: scale(-1,1)
+
+.faq
+	padding: 120px 0 120px 0
+	border-radius: 50px
+	background: white
+	margin-bottom -85px
+	position relative
+	z-index 2
+	&__title
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 64px;
+		text-align: center;
+		color: #192122;
+		margin-bottom 60px
+	&__container
+		max-width: 880px
+		margin: auto
+		
+
+
+.accordeon
+	border: 1px solid #D1D6D8;
+	border-radius: 50px
+	padding-bottom 140px
+	dl
+		background: #FFFFFF;
+		border-radius: 50px;
+		margin-bottom: -140px
+		transition: $default-transition
+		&:not(:last-child)
+			padding-bottom 140px
+		&:last-child
+			padding-bottom 60px
+		&:hover
+			background radial-gradient(181.81% 181.81% at 50% 139.9%, #21fff6 0%, #007c87 100%)
+			dt
+				color: #fff
+				svg
+					path
+						stroke: white
+			
+	dt
+		padding: 45px 45px 0 60px
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: -0.454545px;
+		color: #192122;
+		margin-bottom 15px
+		display flex
+		justify-content: space-between
+		cursor: pointer
+		span
+			position relative
+			top: -5%
+			transition: .3s
+	dd
+		padding-left 60px
+		margin-bottom 35px
+
+	.active-2
+		background: radial-gradient(181.81% 181.81% at 50% 139.9%, #21FFF6 0%, #007C87 100%);
+		.active
+			color: #fff
+			& + dd
+				color: #fff
+		span
+			transform: rotate(-180deg)
+			svg
+				path
+					stroke: white
+		
+.bottom
+	padding-top 105px
+	background: radial-gradient(148.86% 148.86% at 50% 161.84%, #21FFF6 0%, #007C87 100%);
+	border-radius: 50px
+	position relative 
+	&:before
+		content: ""
+		position absolute
+		background: #007C88;
+		z-index -1
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+	&__wrapper
+		display flex
+		justify-content: space-between
+		align-items: flex-end
+	&__pic
+		max-width: 444px
+	&__logo
+		max-width: 256px
+		margin-right 100px
+		margin-bottom 258px
+	
+.calc
+	height: 444px
+	background: #F2F2F2
+	border-radius: 45px
+	width: 355px
+	border-radius: 45px
+	margin-bottom 80px
+	&__top
+		background: #fff
+		padding: 20px 20px 30px 30px
+		border-radius: 45px
+	&__bottom
+		padding: 25px 20px 20px 20px
+		&-items
+			display flex
+			justify-content: space-between
+			max-width: 274px
+			margin: 0 auto 20px
+		&-item
+			&-title
+				font-weight: 500;
+				font-size: 11px;
+				line-height: 11px;
+				text-align: center;
+				color: rgba(25, 33, 34, .5);
+				mix-blend-mode: normal;
+				margin-bottom 10px
+			&-desc
+				font-weight: 700;
+				font-size: 12px;
+				line-height: 12px;
+				text-align: center;
+				color: rgba(25, 33, 34, .5);
+				mix-blend-mode: normal;
+	&__wrapper
+		display flex
+		justify-content: space-between
+		align-items: center
+	&__wrapper-bottom
+		margin-top 20px
+		display flex
+		justify-content: space-between
+		align-items: center
+	&__slider
+		margin-top 21px
+		margin-bottom 37px
+		border-radius: 33px
+		height: 14px
+	&__title
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 14px;
+		color: rgba(25, 33, 34, .5);
+		mix-blend-mode: normal;
+	&__amount
+		text-align center
+		width: 153px
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 15px;
+		letter-spacing: -1px;
+		color: #182021;
+		padding: 18px 0
+		background: #FFFFFF;
+		border: 1px solid #D1D6D8;
+		border-radius: 25px;
+	&__dropdown
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 14px;
+		color: #192122;
+		padding-left 23px
+		padding-right 25px
+		position relative
+		cursor pointer
+		transition: $default-transition
+		&:hover
+			color: rgba(25, 33, 34, .5)
+		&:before
+			content ""
+			display block
+			width: 18px
+			height: 18px
+			left: 0
+			top: -2px
+			position absolute
+			background: url(../img/main/calendar.svg)
+		&:after
+			content ""
+			display block
+			width: 20px
+			height: 20px
+			right: 0
+			top: -4px
+			position absolute
+			background: url(../img/main/accordion-arrow.svg)
+		&-list
+			background: #FFFFFF;
+			box-shadow: 0px 45px 58px rgba(0, 0, 0, 0.423246);
+			border-radius: 23px;
+			width: 175px
+			height: 256px
+			overflow-y: scroll;
+			position absolute;
+			top: 30px
+			left: -20px
+			padding: 30px 40px
+			display none
+			&-item
+				font-weight: 500;
+				font-size: 17px;
+				line-height: 20px;
+				letter-spacing: -0.5px;
+				color: #182021;
+				transition: .3s
+				&:hover
+					color: rgba(24, 32, 33, .5);
+				&:not(:last-child)
+					margin-bottom 20px
+			&-fade
+				position absolute
+				width: 100%
+				height: 30px
+				background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+				bottom: -272px
+				left: 0
+				display none
+			
+	&__item
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 15px;
+		letter-spacing: -1px;
+		color: #182021;
+		background: #F2F2F2;
+		border-radius: 25px;
+		text-align center
+		padding: 9px 0
+		width: 95px
+		cursor pointer
+		transition: .3s
+		transition: $default-transition
+		&:hover
+			box-shadow: 0 0 3px #192122
+		&-active
+			background-color: #00AAB5;
+			color: #fff
+			&:hover
+				background-color: #00AAB5;
+				color: #fff
+				box-shadow: none
+
+	&__return
+		display flex
+		justify-content: center
+		margin: 0 auto 25px
+		span
+			display inline-block
+		&-grey
+			font-weight: 500;
+			font-size: 11px;
+			line-height: 11px;
+			color: rgba(25, 33, 34, .5);
+			mix-blend-mode: normal;
+			margin-right 10px
+		&-green
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 12px;
+			color: #228833;
+			margin-right 10px
+		&-red
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 12px;
+			text-align: center;
+			text-decoration-line: line-through;
+			color: rgba(255, 43, 0, .5);
+			mix-blend-mode: normal;
+	&__button
+		display inline-block
+		width: 100%
+		padding: 25px 0
+		background: #00AAB5;
+		border-radius: 35px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 18px;
+		text-align: center;
+		color: #FFFFFF;
+		&:hover
+			background: hsl(184, 100%, 30%);
+			color: #fff
+		
+
+.input-status
+	margin-top 10px
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FF4747;
+	display none
+
+.valid
+	input
+		border: 1px solid #00AAB5
+
+.invalid
+	input
+		border: 1px solid #FF4747
+		&:focus
+			border: 1px solid #FF4747
+	.input-status
+		display block
+		
+	
+
+.noUi-connects
+	border-radius: 33px
+.noUi-connect
+	background: #00AAB5;
+
+.noUi-horizontal .noUi-handle
+	width: 34px;
+	height: 28px;
+	right: -47px;
+	top: -15px;
+	border-radius: 50px
+	width: 44px
+	height: 44px
+	background: #00AAB5;
+	
+	
+.noUi-handle
+	box-shadow: none
+	border: none
+.noUi-target
+	border: none
+	box-shadow: none
+	border: 1px solid #00AAB5;
+	background: #fff
+.noUi-touch-area
+	&:before
+		content ""
+		position absolute
+		top: 24%
+		left: -9%
+		display block
+		width: 7px
+		height: 22px
+		background-image: url(../img/main/backplate.svg)
+	&:after
+		content ""
+		position absolute
+		top: 13px
+		left: 6px
+		display block
+		width: 32px
+		height: 19px
+		background-image: url(../img/main/arrow-double.svg)
+		background-color: #00AAB5
+.noUi-handle:after, .noUi-handle:before
+	display none
+
+
+
+
+
+.slick-dots li button 
+	font-size: 0;
+	line-height: 0;
+	padding: 5px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+.slick-dots li button:before
+	display none
+.slick-active
+	button
+		font-size: 0;
+		line-height: 0;
+		padding: 5px;
+		border: 1px solid #fff;
+		border-radius: 50px;
+		background: #fff!important
+
+.slick-dots li, .slick-dots li button, .slick-next, .slick-prev
+	width: 8px
+	height: 8px
+.slick-dots
+	bottom: -70px
+
+
+.email:focus
+	border-radius: 25px 25px 0 0 !important;
+	border: 1px solid #00aab5 !important;
+	border-bottom: transparent !important;
+
+
+

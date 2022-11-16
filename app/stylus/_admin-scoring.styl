@@ -1,0 +1,271 @@
+.admin-page
+    background: #007C87
+    .header
+        display none
+
+.cabinet
+    display flex
+    justify-content: space-between
+    padding: 40px 80px 0 50px
+    gap: 73px
+    &-right
+        margin-left 270px
+        width: 100%
+        padding-bottom 50px
+    &__container-top
+        display flex
+        background: #007C87;
+        border-radius: 35px;
+        padding: 40px
+        margin-bottom 60px
+        gap: 40px
+    &__specs
+        &-title
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            max-width 552px
+            margin-bottom 25px
+        &-list
+            display flex
+            flex-wrap: wrap
+            &-item
+                width: 50%
+                position relative
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                color: #FFFFFF;
+                padding-left 34px
+                margin-bottom 15px
+                &:before
+                    content: "—"
+                    opacity .5
+                    position absolute
+                    left: 0
+                
+    &__menu
+        min-width: 197px
+        position: fixed
+    &__content
+        background: #fff
+        padding: 60px 60px 80px 60px
+        border-radius: 45px
+        width: 100%
+        &-item
+            display flex
+            justify-content: left
+            align-items: flex-start
+            &:not(:last-child)
+                margin-bottom 20px
+            &-number
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                color: #007C87;
+                width: 158px
+            &-desc
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 18px;
+                color: #192122;
+                width: 261px
+            &-desc-2
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(25, 33, 34, .5);
+                max-width: 402px
+    &__scores
+        &-block
+            background: #fff
+            border-radius: 50%
+            width: 221px
+            height: 221px
+            position relative
+        &-inner
+            position absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 209px
+            height: 209px
+            border-radius: 50%
+            border: 41px solid #00AAB5
+            z-index 1
+        &-inner2
+            position absolute
+            top: 51%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index 2
+            svg
+                path
+                    fill: none;
+                    stroke-width: 31px;
+                    stroke: #ffffff;
+                    stroke-lineCap: round;
+                    stroke-dasharray: 500
+                    stroke-dashoffset: 500
+                    -webkit-transition: all 5s linear;
+                    transition: all 5s linear;
+            &.active
+                svg
+                    path
+                        stroke-dashoffset: 0
+        &-text
+            position absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            display flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            p
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #192122;
+                margin-bottom 5px
+            span
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: rgba(25, 33, 34, .5);
+                mix-blend-mode: normal;
+    &__title
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #192122;
+        margin-bottom 40px
+    &__logo
+        margin-bottom 40px
+    &__list
+        .hidden
+            visibility: hidden
+        &-item
+            padding-left 47px
+            position relative
+            &:not(:last-child)
+                margin-bottom 25px
+            &-1
+                &:before
+                    background: url("../img/main/admin-1.svg")
+                    content: ""
+                    position absolute
+                    left: 0
+                    display block
+                    width: 40px
+                    height: 40px
+                    top: -10px
+            &-2
+                &:before
+                    background: url("../img/main/admin-2.svg")
+                    content: ""
+                    position absolute
+                    left: 0
+                    display block
+                    width: 40px
+                    height: 40px
+                    top: -10px
+            &-3
+                &:before
+                    background: url("../img/main/admin-3.svg")
+                    content: ""
+                    position absolute
+                    left: 0
+                    display block
+                    width: 40px
+                    height: 40px
+                    top: -10px
+            &-4
+                &:before
+                    background: url("../img/main/admin-4.svg")
+                    content: ""
+                    position absolute
+                    left: 0
+                    display block
+                    width: 40px
+                    height: 40px
+                    top: -10px
+            &-5
+                &:before
+                    background: url("../img/main/admin-5.svg")
+                    content: ""
+                    position absolute
+                    left: 0
+                    display block
+                    width: 40px
+                    height: 40px
+                    top: -10px
+            &-6
+                &:before
+                    background: url("../img/main/admin-6.svg")
+                    content: ""
+                    position absolute
+                    left: 0
+                    display block
+                    width: 40px
+                    height: 40px
+                    top: -10px
+            &-7
+                &:before
+                    background: url("../img/main/admin-7.svg")
+                    content: ""
+                    position absolute
+                    left: 0
+                    display block
+                    width: 40px
+                    height: 40px
+                    top: -10px
+            &-8
+                &:before
+                    background: url("../img/main/admin-8.svg")
+                    content: ""
+                    position absolute
+                    left: 0
+                    display block
+                    width: 40px
+                    height: 40px
+                    top: -10px
+            &-9
+                &:before
+                    background: url("../img/main/admin-9.svg")
+                    content: ""
+                    position absolute
+                    left: 0
+                    display block
+                    width: 40px
+                    height: 40px
+                    top: -10px
+        &-link
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(255, 255, 255, .5);
+            &:hover
+                color: #fff
+    &__button
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        display block
+        padding: 12px 0
+        width: 191px
+        margin: 52px auto 0
+        border: 1px solid rgba(255, 255, 255, .5)
+        border-radius: 35px
+        &:hover
+            color: rgba(255, 255, 255, .5)
+    &__button.active
+        background: #fff
+        color: #000
+
+    

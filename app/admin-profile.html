@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Site name</title>
+    <meta name="description" content="Site slogan">
+    <meta name="keywords" content="Site keys">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <meta name="theme-color" content="#fff">
+    <meta property="og:title" content="Site keys" />
+    <meta property="og:description" content="Site slogan" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="***permalink***" />
+    <meta property="og:image" content="***img***" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <!-- android favicon -->
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <!-- windows favicon -->
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <!-- apple favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <!-- safari format detection -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="date=no" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/favicon/16x16.png" type="image/png">
+	<link rel="shortcut icon" href="img/favicon/32x32.png" type="image/png">
+	<link rel="shortcut icon" href="img/favicon/96x96.png" type="image/png">
+	<link rel="shortcut icon" href="img/favicon/120x120.png" type="image/png">
+	<link rel="shortcut icon" href="img/favicon/192x192.png" type="image/png">
+</head>
+
+<body class="body loaded admin-page">
+
+    <div class="icon-load">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    //= parts/header-admin.html
+    <div class="main-wrapper">
+        <main class="main">
+            <div class="cabinet">
+                //= parts/admin-menu.html
+                <div class="cabinet-right">
+                    <div class="cabinet__content">
+                        <div class="cabinet-profile">
+                            <h2 class="cabinet-profile__title">
+                                Профиль
+                            </h2>
+                            <div class="cabinet-profile__wrapper">
+                                <div class="cabinet-profile__left">
+                                    <div class="cabinet-profile__left-wrapper">
+                                        <h3 class="cabinet-profile__subtitle">
+                                            Личные данные
+                                        </h3>
+                                        <div class="cabinet-profile__icon">
+                                            <img src="img/main/icon_edit.svg" alt="">
+                                            <div class="cabinet-profile__icon-text">
+                                                Отмена
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-name">
+                                            ФИО
+                                        </label>
+                                        <input type="text" id="admin-name" value="Никитин Богдан Сергеевич">
+                                        <div class="cabinet-profile__item-block">
+                                            Никитин Богдан Сергеевич
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-birth">
+                                            Дата рождения
+                                        </label>
+                                        <input type="text" id="admin-birth" value="25.10.1995">
+                                        <div class="cabinet-profile__item-block">
+                                            25.10.1995
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-phone">
+                                            Телефон
+                                        </label>
+                                        <input type="text" id="admin-phone" value="+ 8 800 345 67 89">
+                                        <div class="cabinet-profile__item-block">
+                                            + 8 800 345 67 89
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-mail">
+                                            Электронная почта
+                                        </label>
+                                        <input type="text" id="admin-mail" value="customersmail@gmail.com">
+                                        <div class="cabinet-profile__item-block">
+                                            customersmail@gmail.com
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="cabinet-profile__button" data-fancybox data-src="#admin-popup">
+                                        Сменить</a>
+                                </div>
+                                <div class="cabinet-profile__right">
+                                    <h3 class="cabinet-profile__subtitle">
+                                        Смена пароля
+                                    </h3>
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-pass1">
+                                            Текущий пароль
+                                        </label>
+                                        <input type="password" id="admin-pass1">
+                                    </div>
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-pass2">
+                                            Новый пароль
+                                        </label>
+                                        <input type="password" id="admin-pass2">
+                                    </div>
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-pass3">
+                                            Подтвердить пароль
+                                        </label>
+                                        <input type="password" id="admin-pass3">
+                                    </div>
+                                    <a href="#!" class="cabinet-profile__button" data-fancybox data-src="#admin-popup">
+                                        Сменить</a>
+                                </div>
+                            </div>
+                            <div class="cabinet-profile__left wide">
+                                <div class="cabinet-profile__left-wrapper">
+                                    <h3 class="cabinet-profile__subtitle">
+                                        Паспортные данные
+                                    </h3>
+                                    <div class="cabinet-profile__icon">
+                                        <div class="cabinet-profile__icon-edit"> Редактировать</div>
+                                        <div class="cabinet-profile__icon-svg"><img src="img/main/icon_edit.svg" alt="">
+                                        </div>
+                                        <div class="cabinet-profile__icon-text">
+                                            Отмена
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-profile__item-wrapper">
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-series">
+                                            Серия
+                                        </label>
+                                        <input type="text" id="admin-series" value="37 03">
+                                        <div class="cabinet-profile__item-block">
+                                            37 03
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-passnum">
+                                            Номер паспорта
+                                        </label>
+                                        <input type="text" id="admin-passnum" value="833248">
+                                        <div class="cabinet-profile__item-block">
+                                            833248
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-place">
+                                            Место рождения
+                                        </label>
+                                        <input type="text" id="admin-place" value="Санкт-Петербург">
+                                        <div class="cabinet-profile__item-block">
+                                            Санкт-Петербург
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-profile__item-wrapper">
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-date">
+                                            Дата выдачи паспорта
+                                        </label>
+                                        <input type="text" id="admin-date" value="25.10.1977">
+                                        <div class="cabinet-profile__item-block">
+                                            25.10.1977
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item wide">
+                                        <label for="admin-givenby">
+                                            Кем выдан
+                                        </label>
+                                        <input type="text" id="admin-givenby" value="ГУ МВД России по г.Санкт-Петербург">
+                                        <div class="cabinet-profile__item-block">
+                                            ГУ МВД России по г.Санкт-Петербург
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-profile__item-wrapper">
+                                    <div class="cabinet-profile__item">
+                                        <label for="admin-code">
+                                            Код подразделения
+                                        </label>
+                                        <input type="text" id="admin-code" value="770 - 011">
+                                        <div class="cabinet-profile__item-block">
+                                            770 - 011
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item wide">
+                                        <label for="admin-gender">
+                                            Ваш пол
+                                        </label>
+                                        <div class="passport__radio">
+                                            <div class="passport__radio-wrapper">
+                                                <div class="passport__radio-container">
+                                                    <div class="passport__radio-item">
+                                                        <label for="male" class="passport__radio-label">
+                                                            <input type="radio" name="gender" id="male">
+                                                            <div class="passport__radio-fake"></div>
+                                                            Мужской
+                                                        </label>
+                                                    </div>
+                                                    <div class="passport__radio-item">
+                                                        <label for="female" class="passport__radio-label">
+                                                            <input type="radio" name="gender" id="female">
+                                                            <div class="passport__radio-fake"></div>
+                                                            Женский
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cabinet-profile__item-block">
+                                            Мужской
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#!" class="cabinet-profile__button" data-fancybox data-src="#admin-popup">
+                                    Сменить</a>
+                            </div>
+                            <div class="cabinet-profile__left wide">
+                                <div class="cabinet-profile__left-wrapper">
+                                    <h3 class="cabinet-profile__subtitle">
+                                        Адрес регистрации
+                                    </h3>
+                                    <div class="cabinet-profile__icon">
+                                        <div class="cabinet-profile__icon-edit"> Редактировать</div>
+                                        <div class="cabinet-profile__icon-svg"><img src="img/main/icon_edit.svg" alt="">
+                                        </div>
+                                        <div class="cabinet-profile__icon-text">
+                                            Отмена
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-profile__item-wrapper">
+                                    <div class="cabinet-profile__item half">
+                                        <label for="admin-region">
+                                            Область
+                                        </label>
+                                        <input type="text" id="admin-region" value="Ленинградская">
+                                        <div class="cabinet-profile__item-block">
+                                            Ленинградская
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item half">
+                                        <label for="admin-city">
+                                            Населенный пункт
+                                        </label>
+                                        <input type="text" id="admin-city" value="г. Санкт-Петербург">
+                                        <div class="cabinet-profile__item-block">
+                                            г. Санкт-Петербург
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-profile__item-wrapper">
+                                    <div class="cabinet-profile__item half">
+                                        <label for="admin-street">
+                                            Улица
+                                        </label>
+                                        <input type="text" id="admin-street" value="Дорога на Турухтанные острова">
+                                        <div class="cabinet-profile__item-block">
+                                            Дорога на Турухтанные острова
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-profile__item half">
+                                        <label for="admin-apartments">
+                                            Дом, квартира
+                                        </label>
+                                        <input type="text" id="admin-apartments" value="14А, 57">
+                                        <div class="cabinet-profile__item-block">
+                                            14А, 57
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#!" class="cabinet-profile__button" data-fancybox data-src="#admin-popup">
+                                    Сменить</a>
+                            </div>
+                            <div class="cabinet-profile__left wide no-border">
+                                <div class="cabinet-profile__left-wrapper">
+                                    <h3 class="cabinet-profile__subtitle">
+                                        Социальные сети
+                                    </h3>
+                                </div>
+                                <div class="cabinet-profile__social-item">
+                                    <div class="cabinet-profile__social-wrapper">
+                                        <div class="cabinet-profile__social-logo">
+                                            <img src="img/main/twitter.svg" alt="">
+                                        </div>
+                                        <span class="cabinet-profile__social-title">Twitter</span>
+                                    </div>
+                                    <div class="cabinet-profile__social-icon">
+                                        <a href="#!">
+                                            <img src="img/main/delete.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cabinet-profile__social-item">
+                                    <div class="cabinet-profile__social-wrapper">
+                                        <div class="cabinet-profile__social-logo">
+                                            <img src="img/main/vk.svg" alt="">
+                                        </div>
+                                        <span class="cabinet-profile__social-title">Vkontakte</span>
+                                    </div>
+                                    <div class="cabinet-profile__social-icon">
+                                        <a href="#!">
+                                            <img src="img/main/delete.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cabinet-profile__social-item">
+                                    <div class="cabinet-profile__social-wrapper">
+                                        <div class="cabinet-profile__social-logo">
+                                            <img src="img/main/facebook_icon.svg" alt="">
+                                        </div>
+                                        <span class="cabinet-profile__social-title">Facebook</span>
+                                    </div>
+                                    <div class="cabinet-profile__social-icon">
+                                        <a href="#!">
+                                            <img src="img/main/delete.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cabinet-profile__social-item">
+                                    <div class="cabinet-profile__social-wrapper">
+                                        <div class="cabinet-profile__social-logo">
+                                            <img src="img/main/linkedin.svg" alt="">
+                                        </div>
+                                        <span class="cabinet-profile__social-title">Linkedin</span>
+                                    </div>
+                                    <div class="cabinet-profile__social-icon">
+                                        <a href="#!">
+                                            <img src="img/main/add.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-popup" id="admin-popup">
+                <h2 class="admin-popup__title">
+                    Изменения сохранены
+                </h2>
+                <p class="admin-popup__desc">
+                    Изменения в вашей личной анкете были удачно сохранены
+                </p>
+                <a href="#!" class="admin-popup__button">Продолжить</a>
+            </div>
+    </div>
+    </main>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.min.js"></script>
+</body>
+
+</html>

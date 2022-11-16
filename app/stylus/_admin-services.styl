@@ -1,0 +1,48 @@
+.cabinet-services
+    counter-reset: sub1
+    counter-reset: sub2
+    &__title
+        font-size 24px
+        line-height 28px
+        color #192122
+    h3&__subtitle
+        font-size 20px
+        line-height 30px
+        color #192122
+    h4&__subtitle
+        font-size 18px
+        line-height 34px
+        color #192122
+        padding-left 30px
+        position relative
+        counter-increment: sub1
+        &:before
+            content:counter(sub1)".";
+            position absolute
+            left: 0
+            top: 0
+            display block
+            font-size 20px
+            line-height 30px
+    &__desc
+        font-size 18px
+        line-height 34px
+    &__list
+        &-item
+            counter-increment: sub2
+            position relative
+            padding-left 30px
+            p
+                font-size 18px
+                line-height 34px
+                color #192122
+            &:not(:last-child)
+                margin-bottom 15px
+            &:before
+                content: counter(sub1)"." counter(sub2);
+                position absolute
+                top: 0
+                left: 0
+                font-size 18px
+                line-height 34px
+                font-weight 700

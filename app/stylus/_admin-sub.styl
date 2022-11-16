@@ -1,0 +1,76 @@
+.cabinet-sub
+    &__title
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #192122;
+        margin-bottom 40px
+    &__container
+        display flex
+        justify-content: left
+        gap: 40px
+    &__left
+        padding: 30px 50px
+        border: 1px solid #D1D6D8
+        border-radius: 35px
+    &__right
+        h3  
+            margin-top 15px
+            font-size 20px
+            line-height 25px
+            margin-bottom 15px
+            color: #192122;
+        p
+            font-size 14px
+            line-height 24px
+            color: #192122;
+            max-width: 390px
+    &__price
+        margin-bottom 10px
+        font-size 30px
+        line-height 50px
+        color: #192122
+        text-align center
+        font-weight 700
+    &__week
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        color: #192122;
+        font-weight: 600;
+        margin-bottom 30px
+    &__list
+        &-item
+            padding-left 34px
+            font-size 14px
+            line-height 18px
+            color: #192122
+            position relative
+            &:not(:last-child)
+                margin-bottom 10px
+            &:before
+                content: "—"
+                position absolute
+                left: 0
+                top: -2px
+                display block
+                opacity .5
+    &__button
+        display block
+        width: 100%
+        background: #00AAB5;
+        border-radius: 35px;
+        color: #fff
+        padding: 25px 0 27px
+        font-weight 700
+        text-align center
+        margin-top 40px
+        font-size 20px
+        &:hover
+            color: #fff
+            background: hsl(184, 100%, 25%)
+
+
+
+
+

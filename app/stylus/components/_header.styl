@@ -1,0 +1,136 @@
+.header
+	position absolute
+	top: 0
+	width 100%
+	min-width $min-width
+	order 1
+	padding: 30px 0
+	z-index: 100
+	&__background-mobile
+		display none
+	&__burger
+		width: 24px
+		height: 24px
+		display none
+		&-element
+			display inline-block
+			height: 2px
+			width: 24px
+			background #fff
+			position relative
+			transition: $default-transition
+			border-radius: 2px
+			&:before
+				content: ""
+				height: 2px
+				width: 100%
+				position absolute
+				top: 8px
+				display block
+				background: #fff
+				transition: $default-transition
+				border-radius: 2px
+			&:after
+				content: ""
+				height: 2px
+				width: 100%
+				position absolute
+				top: -8px
+				display block
+				background: #fff
+				transition: $default-transition
+				border-radius: 2px
+	&__wrapper
+		display flex
+		justify-content: space-between
+		align-items: center
+	&__nav
+		&-logo
+			display none
+		&-list
+			display flex
+			justify-content: space-between
+			align-items: center
+			&-item
+				&:not(:last-of-type)
+					margin-right 40px
+				a
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 17px;
+					color: #FFFFFF;
+					&:hover
+						color: $white-hover
+	&__logo
+		max-width: 135px
+	&__sign-in
+		background: #fff
+		border-radius: 25px
+		transition: .3s
+		width: 110px
+		display flex
+		border: 2px solid transparent
+		&:hover
+			border: 2px solid #fff
+			background: transparent
+			a
+				color: #fff
+		a	
+			text-align center
+			padding: 14px 0
+			width: 100%
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+			color: #192122;
+	&__logout
+		display none
+		transition: .2s
+		&:hover
+			opacity .8
+	
+
+
+.show
+	overflow-y: hidden
+	.header
+		&__nav
+			transform: translateY(0)
+		&__background-mobile
+			display block
+			position: fixed
+			background: #000
+			opacity: .5
+			width: 100vw
+			height: 100vh
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0 
+			z-index 300
+		&__burger
+			&-element
+				height: 0
+				&:before
+					transform: rotate(-45deg)
+					top 0
+				&:after
+					transform: rotate(45deg)
+					top: 0
+
+.admin-page.show
+	overflow-y: hidden
+	.header
+		&__nav
+			transform: translateY(0)
+		&__burger
+			&-element
+				height: 0
+				&:before
+					transform: rotate(-45deg)
+					top 0
+				&:after
+					transform: rotate(45deg)
+					top: 0
+
+			
